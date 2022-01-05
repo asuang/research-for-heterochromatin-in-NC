@@ -1,4 +1,4 @@
-#**<font color="grey"><font size=5>Analysis and visualization of ChIP-Seq  </font></font>**
+# **<font color="grey"><font size=5>Analysis and visualization of ChIP-Seq  </font></font>**
 ##   <font size=4>step1 ChIP_seq.sh (RNA-seq mappers)</font> 
 This step is to process raw reads with QC, adapter trimming, alignment, discarding multiple hits, normalizing enrichment and peak callling.
 You need to install following softwares for each step: <kbd>fastqc</kbd> ,<kbd>trim_galore</kbd> ,<kbd>bowtie2</kbd> ,<kbd>picard</kbd> ,<kbd>bamCoverage(deepTools)</kbd> , <kbd>macs2</kbd> .
@@ -12,7 +12,7 @@ This step is to denoise the backgroud signal with the sliding window.
   plotProfile -m ${sample_name}_end.nm.gz --perGrop -out ${sample_name}_end.pdf
   ```
 
-#**<font color="grey"><font size=5>Analysis and visualization of WGBS  </font></font>**
+# **<font color="grey"><font size=5>Analysis and visualization of WGBS  </font></font>**
 ##   <font size=4>step1 methylation.sh (RNA-seq mappers)</font> 
 This step is to process clean reads with alignment, deduplicate,extracting methlation.
 You need to install following softwares for each step: <kbd>bismark</kbd> ,<kbd>bowtie2</kbd>,<kbd>bedGraphToBigWig</kbd>
