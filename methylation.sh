@@ -8,7 +8,7 @@ bismark --genome /media/hp/disk1/lu/clean/sample/bismark/ -1 ${line}_1.fq.gz -2 
 #deduplicate
 deduplicate_bismark -p mapping/${line}_1_bismark_bt2_pe.bam --output_dir dedup
 done
-# 提取甲基化信息
+
 mkdir methlation
 cat filelist.txt | while read line 
 do
