@@ -1,4 +1,4 @@
-#This script is used to the output file of computeMatrix and every sample to be normalized by their max value
+
 import argparse
 import getopt
 import sys
@@ -8,7 +8,7 @@ import numpy
 import operator
 
 numpy.seterr(divide='ignore',invalid='ignore')
-# get the python script input method2
+
 parser=argparse.ArgumentParser(description="normalize again to the output file of computeMatrix")
 parser.add_argument("-f","--filename",type=str,metavar="filename",required=True,help="please input the name of the input file")
 parser.add_argument("-o","--outfilename",type=str,metavar="filename",required=True,help="please input the name of the output file")
